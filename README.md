@@ -6,6 +6,18 @@ PoliType is an Android app that classifies your political orientation into one o
 
 ---
 
+## Problem Definition
+
+Existing political typology tools (e.g., the Political Compass) reduce complex political identities to a single 2D left–right axis, which fails to capture the full picture. In Korean society specifically, political discourse is often dominated by binary framing — progressive vs. conservative — without distinguishing between economic views, social attitudes, stance on authority, and gender ideology, which can all diverge independently.
+
+**PoliType addresses this by:**
+- Separating political orientation into **four independent axes** rather than collapsing them into one
+- Using **48 questions** grounded in real Korean societal debates (economic policy, minority rights, gender, authority)
+- Grounding the result in **Moral Foundation Theory** (Graham, Haidt & Nosek, 2009), which explains *why* people hold certain political views — not just what those views are
+- Producing a **16-type classification** (like a political MBTI) that is specific enough to be meaningful but interpretable enough to be actionable
+
+---
+
 ## How It Works
 
 Users answer 48 statements on a 5-point scale (Strongly Disagree → Strongly Agree). Responses are scored across four independent axes, each producing a percentage that maps to one letter:
