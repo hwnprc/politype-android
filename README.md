@@ -18,6 +18,14 @@ Existing political typology tools (e.g., the Political Compass) reduce complex p
 
 ---
 
+## Screenshots
+
+| Guide | Question | Result |
+|-------|----------|--------|
+| ![Guide screen](screenshots/guide.png) | ![Question screen](screenshots/question.png) | ![Result screen](screenshots/result.png) |
+
+---
+
 ## How It Works
 
 Users answer 48 statements on a 5-point scale (Strongly Disagree → Strongly Agree). Responses are scored across four independent axes, each producing a percentage that maps to one letter:
