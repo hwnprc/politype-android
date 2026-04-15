@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="32dp"
+    tools:context=".GuideActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnNext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="POLITYPE에 오신 것을\n환영합니다"
+                android:textSize="28sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:lineSpacingExtra="4dp" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이 테스트는 단순한 정치 성향 테스트가 아닙니다.\n\n당신의 정치적 성향을 알아보고, 어떠한 도덕적인 기준이 성향을 만드는지, 그리고 그 성향에 따라 상대방을 이해하는 여정입니다.\n\n어떤 가치가 당신의 신념을 이끄는지, 그리고 왜 타인의 생각은 다르게 느껴지는지 이해해보세요.\n\n지금, 당신만의 POLITYPE을 찾아가는 여정을 시작합니다."
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="32dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:id="@+id/tvNotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="※ 본 테스트는 웨이브 오리지널 [사상검증구역: 더 커뮤니티]의 프로그램내에서 활용하기 위해 제작된 척도로, 측정값이 응답자의 정치사회 견해와 일부 일치하지 않을 수 있습니다.\n\n※ 테스트의 질문들은 연세대학교 사회과학대학 김용찬 교수의 자문을 거쳐 작성되었으며, 리서치 업체 '엠브레인'을 통해 신뢰도 조사를 완료했습니다.\n\n※ 실제로 존재하는 여러 사회적 입장에 대한 응답자의 '동의 여부'를 확인하는 것이므로, 일부 차별적이거나 과격하다고 느껴지는 문항이 있는 점을 참고하여 주시기 바랍니다.\n\n시작에 앞서, 간단한 정보를 통해 프로필을 설정하겠습니다."
+                android:textSize="12sp"
+                android:textColor="#666666"
+                android:fontFamily="sans-serif-light"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginBottom="32dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:text="시작하기"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#000000"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="40dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

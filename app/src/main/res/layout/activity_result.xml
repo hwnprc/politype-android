@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas-android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#FFFFFF"
+    android:fillViewport="true"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Political Type"
+            android:textSize="16sp"
+            android:textColor="#999999"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/tvPoliticalType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EPLE"
+            android:textSize="64sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvTypeDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Egalitarian Progressive Libertarian"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:layout_marginTop="8dp"/>
+
+        <!-- 경제관 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Economic"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Egalitarian"
+                android:textSize="12sp"
+                android:textColor="#FF9800"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Market"
+                android:textSize="12sp"
+                android:textColor="#FF9800"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pbEconomic"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:max="100"
+            android:progress="35"
+            android:progressTint="#FF9800"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvEconomic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="35%"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- 사회관 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Societal"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Progressive"
+                android:textSize="12sp"
+                android:textColor="#2196F3"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conservative"
+                android:textSize="12sp"
+                android:textColor="#2196F3"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pbSocietal"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:max="100"
+            android:progress="70"
+            android:progressTint="#2196F3"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvSocietal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="70%"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- 권위관 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Authority"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Libertarian"
+                android:textSize="12sp"
+                android:textColor="#F44336"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Authoritarian"
+                android:textSize="12sp"
+                android:textColor="#F44336"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pbAuthority"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:max="100"
+            android:progress="45"
+            android:progressTint="#F44336"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvAuthority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45%"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- 젠더관 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feminist"
+                android:textSize="12sp"
+                android:textColor="#9C27B0"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Equalist"
+                android:textSize="12sp"
+                android:textColor="#9C27B0"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pbGender"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:max="100"
+            android:progress="80"
+            android:progressTint="#9C27B0"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80%"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/btnRetry"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#000000"
+            android:text="Next Step"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>
